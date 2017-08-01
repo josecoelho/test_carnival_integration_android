@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TestBuildStackDefault.iml" filepath="$PROJECT_DIR$/TestBuildStackDefault.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carnival-4.1.2b/carnival-4.1.2b.iml" filepath="$PROJECT_DIR$/carnival-4.1.2b/carnival-4.1.2b.iml" />
     </modules>
   </component>
 </project>
