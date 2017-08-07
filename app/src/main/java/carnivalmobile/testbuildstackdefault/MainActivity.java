@@ -13,20 +13,10 @@ import com.carnival.sdk.NotificationConfig;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String SDK_KEY = "CHANGE_THIS_TO_THE_SDK_KEY_HAVING_40CHAR";
-    private static String USER_ID = "Change this to your user id";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Carnival.startEngine(getApplicationContext(), SDK_KEY);
-        Carnival.setUserId(USER_ID, null);
-
-        // uncomment to setDefaultActivity
-//        NotificationConfig config = new NotificationConfig();
-//        config.setDefaultContentIntent(new Intent(getApplicationContext(), SecondActivity.class), PendingIntent.FLAG_UPDATE_CURRENT, Intent.FLAG_ACTIVITY_NEW_TASK);
-//        Carnival.setNotificationConfig(config);
 
         setContentView(R.layout.activity_main);
 
@@ -36,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
             textViewValue.setText(extras.getString("show-messages"));
         }
     }
-
     public void goToSecondActivity(View view) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intent);
